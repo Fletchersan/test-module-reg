@@ -1,0 +1,28 @@
+# Terraform plugin and module cache (local only)
+.terraform/
+
+# State — never commit real state to git if backend is local
+*.tfstate
+*.tfstate.*
+
+# State backups from certain operations
+*.backup
+*.bak
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files that often contain secrets (use *.example.tfvars in repo instead)
+*.tfvars
+*.tfvars.json
+
+# CLI configuration files (may contain credentials)
+.terraformrc
+terraform.rc
+
+# Override files (local experimentation)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
